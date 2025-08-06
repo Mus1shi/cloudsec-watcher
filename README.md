@@ -26,7 +26,7 @@ It helps detect misconfigurations, identify risky deployments, and provide actio
 
 ---
 
-## 🛠️ Technologies & Tools
+## Technologies & Tools
 
 - **Python 3** – scripting and logic  
 - **Azure CLI** / **Azure SDK for Python** – cloud interaction  
