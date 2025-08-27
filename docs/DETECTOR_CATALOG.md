@@ -1,0 +1,6 @@
+# Detectors Catalog (Azure)
+- AZ-IDENTITY-001 : MFA manquant sur owners (High)
+- AZ-STORAGE-001 : Blob public activé (Critical)
+- AZ-KEYVAULT-001 : Purge protection désactivée (High)
+- AZ-NET-001 : NSG Any/Any inbound (Critical)
+- AZ-SQL-001 : Public network access (High)
