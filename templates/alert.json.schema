@@ -1,0 +1,14 @@
+{ "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"CloudSec Watcher Alert","type":"object",
+  "required":["id","rule_id","resource","severity","description","timestamp"],
+  "properties":{
+    "id":{"type":"string"},
+    "rule_id":{"type":"string"},
+    "resource":{"type":"string"},
+    "severity":{"type":"string","enum":["low","medium","high","critical"]},
+    "category":{"type":"string"},
+    "description":{"type":"string"},
+    "recommendation":{"type":"string"},
+    "timestamp":{"type":"string","format":"date-time"}
+  }
+}
