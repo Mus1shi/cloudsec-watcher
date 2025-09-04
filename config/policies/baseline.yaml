@@ -1,0 +1,31 @@
+# Règles de base – désactivées par défaut (on activera par lot plus tard)
+rules:
+  - id: AZ-IDENTITY-001
+    title: "MFA manquant pour les owners"
+    category: "Identity"
+    severity: "high"
+    enabled: false
+
+  - id: AZ-STORAGE-001
+    title: "Public access autorisé sur Blob"
+    category: "Storage"
+    severity: "critical"
+    enabled: false
+
+  - id: AZ-NET-001
+    title: "NSG Any/Any en entrée"
+    category: "Network"
+    severity: "critical"
+    enabled: false
+
+  - id: AZ-KEYVAULT-001
+    title: "Purge protection désactivée"
+    category: "KeyVault"
+    severity: "high"
+    enabled: false
+
+  - id: AZ-SQL-001
+    title: "Public network access activé"
+    category: "Database"
+    severity: "high"
+    enabled: false
