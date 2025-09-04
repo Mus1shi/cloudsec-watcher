@@ -1,0 +1,12 @@
+azure:
+  tenant_id: "YOUR_TENANT"        # à remplacer plus tard
+  subscriptions: ["SUB_ID_1"]     # à remplacer plus tard
+  auth: "managed_identity"        # dev: "device_code" si besoin
+
+report:
+  format: "md"                    # md d'abord, HTML/CSV plus tard
+  output_dir: "reports"           # dossier de sortie des rapports
+
+policies:
+  enabled_sets:
+    - "baseline"                  # set par défaut (désactivé au départ)
