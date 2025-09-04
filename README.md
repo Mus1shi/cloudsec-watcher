@@ -62,6 +62,15 @@ cloudsec-watcher/
 
 ---
 
+## Quick Start (docs only)
+1. Lire `docs/ARCHITECTURE.md` et `docs/THREAT_MODEL.md`.
+2. Copier/adapter `config/example.settings.yaml`.
+3. Les règles par défaut : `config/policies/baseline.yaml` (désactivées).
+4. Les rapports sortiront dans `reports/` (Markdown d'abord).
+
+
+---
+
 ## Notes
 
 > This tool is educational, built during my Cloud Security training.  
