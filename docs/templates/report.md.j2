@@ -1,0 +1,26 @@
+# CloudSec Watcher – Rapport
+Date: {{ generated_at }}
+
+## Résumé exécutif
+- Abonnements scannés : {{ subscriptions|length if subscriptions else 0 }}
+- Total alertes : {{ alerts|length if alerts else 0 }}
+- Critiques: {{ critical_count|default(0) }} | Hautes: {{ high_count|default(0) }} | Moyennes: {{ medium_count|default(0) }} | Basses: {{ low_count|default(0) }}
+
+## Top alertes
+{% for a in top_alerts or [] -%}
+- **{{ a.severity|upper }}** — {{ a.rule_id }} — {{ a.resource }}
+  {{ a.description }}
+  _Fix_ : {{ a.recommendation }}
+{%- endfor %}
+
+## Détails par catégorie
+{% for cat, items in alerts_by_category.items() if alerts_by_category else [] -%}
+### {{ cat }} ({{ items|length }})
+{% for a in items -%}
+- [{{ a.rule_id }}] {{ a.resource }} – {{ a.severity }}
+{%- endfor %}
+{%- endfor %}
+
+## Métadonnées
+- Généré par : CloudSec Watcher
+- Horodatage : {{ generated_at }}
